@@ -16,11 +16,7 @@ export class DriverTripsListComponent {
   displayedColumns: string[] = [
     'startTime',
     'endTime',
-    'pickUpLocation',
-    'dropOffLocation',
     'passengers',
-    'fare',
-    'distance',
     'actions',
   ];
 

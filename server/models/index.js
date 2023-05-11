@@ -5,10 +5,10 @@ const tripModel = require('./Trip');
 const { dbVars } = require('../config/env.config');
 
 const sequelize = new Sequelize(dbVars.database, dbVars.user, dbVars.password, {
-    host: dbVars.host,
-    dialect: 'postgres',
-    logging: console.log,
-    logQueryParameters: true,
+  host: dbVars.host,
+  dialect: 'postgres',
+  logging: console.log,
+  logQueryParameters: true,
 });
 
 const db = {};

@@ -1,0 +1,14 @@
+<mat-card *ngIf="driverDetails">
+    <mat-card-header>
+        <mat-card-title>{{driverDetails.firstName}} {{driverDetails.lastName}}
+        </mat-card-title>
+        <mat-card-subtitle>{{driverDetails.phone}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{driverDetails.email}}</p>
+        <p>Registerd on: {{driverDetails.createdAt|date: 'dd/MM/yyyy'}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button (click)="redirectToTrips()" mat-flat-button color="primary">VIEW TRIPS</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,8 @@
+<mat-card *ngIf="driverTripDetails">
+    <mat-card-content>
+        <p>Trip Started At: {{driverTripDetails.startTime}}</p>
+        <p>Trip Ended At: {{driverTripDetails.endTime}}</p>
+        <p>Number of passengers: {{driverTripDetails.noOfPassengers}}</p>
+        <p>Vehicle Details: {{driverTripDetails.Car.brandName}} ({{driverTripDetails.Car.registrationNumber}})</p>
+    </mat-card-content>
+</mat-card>

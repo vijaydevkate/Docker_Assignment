@@ -1,5 +1,10 @@
 const { Router } = require('express');
-const { driverDetails, driverTripDetails, listDrivers, listDriverTrips } = require('../controllers/driver');
+const {
+  driverDetails,
+  driverTripDetails,
+  listDrivers,
+  listDriverTrips,
+} = require('../controllers/driver');
 
 const router = Router();
 router.get('/', listDrivers);

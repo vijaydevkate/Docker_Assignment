@@ -14,7 +14,6 @@ export class DriverListComponent {
   displayedColumns: string[] = [
     'firstName',
     'lastName',
-    'licenseNumber',
     'phone',
     'email',
     'actions',

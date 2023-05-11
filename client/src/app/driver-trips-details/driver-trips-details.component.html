@@ -1,8 +1,17 @@
+<h1>Driver Trips Details</h1>
 <mat-card *ngIf="driverTripDetails">
-    <mat-card-content>
-        <p>Trip Started At: {{driverTripDetails.startTime}}</p>
-        <p>Trip Ended At: {{driverTripDetails.endTime}}</p>
-        <p>Number of passengers: {{driverTripDetails.noOfPassengers}}</p>
-        <p>Vehicle Details: {{driverTripDetails.Car.brandName}} ({{driverTripDetails.Car.registrationNumber}})</p>
-    </mat-card-content>
+  <mat-card-content>
+    <p>Trip Started At: {{ driverTripDetails.startTime }}</p>
+    <p>Trip Ended At: {{ driverTripDetails.endTime }}</p>
+    <p>Number of passengers: {{ driverTripDetails.noOfPassengers }}</p>
+    <p>Pick Up Location: {{ driverTripDetails.pickUpLocation }}</p>
+    <p>Drop Off Location: {{ driverTripDetails.dropOffLocation }}</p>
+    <p>Fare charged: {{ driverTripDetails.fare }}$</p>
+    <p>Distance travelled: {{ driverTripDetails.distance }} miles</p>
+    <p>
+      Vehicle Details: {{ driverTripDetails.Car.brandName }} ({{
+        driverTripDetails.Car.registrationNumber
+      }})
+    </p>
+  </mat-card-content>
 </mat-card>

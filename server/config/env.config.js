@@ -10,6 +10,6 @@ const dbVars = {
 };
 
 const appVars = {
-  port: process.env.PORT
+  port: process.env.PORT,
 };
 module.exports = { dbVars, appVars };
